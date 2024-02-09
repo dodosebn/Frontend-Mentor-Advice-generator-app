@@ -1,0 +1,124 @@
+@import url("https://fonts.google.com/specimen/Manrope");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: #313a49;
+  --darkGrayishBlue: #202632;
+  --darkBlue: #222222;
+}
+body {
+  background-color: var(--darkBlue);
+  overflow-y: hidden;
+}
+section,
+.container,
+.box-cont,
+.quote-cont,
+.dice-hold,
+footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Manrope", sans-serif;
+}
+section {
+  padding: 0 7em;
+}
+.container {
+  background-color: var(--darkGrayishBlue);
+  width: 100%;
+  height: 40em;
+}
+.box-hold {
+  background-color: var(--grayishBlue);
+  width: 32em;
+  height: 20em;
+  border-radius: 12px;
+}
+.advice p {
+  text-align: center;
+  color: var(--neonGreen);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  padding-top: 3em;
+  font-weight: 600;
+}
+.quote-hold {
+  width: 15em;
+  max-height: 23em;
+  padding-top: 0.5em;
+  font-size: 32px;
+  text-align: center;
+  color: var(--LightCyan);
+}
+.divider-cont,
+.dice-cont {
+  position: relative;
+}
+.divider-hold,
+.dice-hold {
+  position: absolute;
+  top: 5em;
+  right: 2.2em;
+}
+.dice-hold {
+  top: 10em;
+  right: 17.3em;
+  background-color: var(--neonGreen);
+  width: 4em;
+  height: 4em;
+  border: 1px solid var(--neonGreen);
+  border-radius: 50%;
+}
+.dice-hold:hover {
+  box-shadow: 0px 0px 23px var(--neonGreen);
+}
+footer {
+  position: relative;
+}
+.attribution {
+  position: absolute;
+  bottom: 2em;
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+@media (max-width: 430px) {
+  body {
+    background-color: var(--darkGrayishBlue);
+    overflow-y: scroll;
+  }
+  .box-hold {
+    width: 22em;
+    height: 20em;
+  }
+  .quote-hold {
+    width: 11em;
+    font-size: 27px;
+    padding-top: 1em;
+  }
+  .img-divider {
+    content: url("./images/pattern-divider-mobile.svg");
+  }
+  .dice-hold {
+    top: 10em;
+    right: 11.5em;
+    background-color: var(--neonGreen);
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+  }
+  .attribution{
+    width: 19em;
+  }
+}
